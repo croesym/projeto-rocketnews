@@ -23,6 +23,7 @@ main{
 }   
 
 aside{
+    height: 100vh;
     grid-area: aside;
     background-image: url('assets/read_news.jpg');
     background-position: center;
@@ -137,3 +138,9 @@ a{
     font-size: 20px;
     color: #FF0000;
 }
+
+.swal2-popup {
+    font-size: 1rem;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+  }

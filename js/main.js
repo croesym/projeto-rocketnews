@@ -20,7 +20,7 @@ submitButton.addEventListener("click", (e) => {
             dados.push(auxRegistro);
             localStorage.setItem("dadosemail", JSON.stringify(dados));
             console.log("Cadastrado com sucesso!");
-            alert("Email cadastrado com sucesso!");
+            alerta()
             email.value="";
         }
         e.preventDefault();
@@ -39,4 +39,16 @@ submitButton.addEventListener("click", (e) => {
             let emailPattern =
               /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
             return emailPattern.test(email);
-        }    
+        } 
+        
+        function alerta(){
+            swal.fire({
+                position: 'center',
+                icon: 'success',
+                background: '#121214',
+                title: 'E-mail cadastrado com sucesso!',
+                showConfirmButton: false,
+                timer: 1500,
+                color: '#FFFFFF',
+              })
+        }
