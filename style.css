@@ -1,0 +1,139 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+/* Configurações da página \/ */
+
+body{
+    background: #121214;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "main aside";
+}
+
+main{
+    grid-area: main;
+}   
+
+aside{
+    grid-area: aside;
+    background-image: url('assets/read_news.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Configurações da página /\ */
+
+.logo img{
+    width: 350px;
+    max-width: 350px;
+    margin: 50px 45px;
+}  
+
+
+.textos{
+    margin: 0px 45px;
+}
+
+.textos h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 24px;
+    color: #08C05E;
+}
+
+.textos h3{
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.textos h4{
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.form{
+    margin: 0px 45px;
+    filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+.form p{
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color:#A8A8A8;
+    margin: 16px 0px 10px 0px;
+}
+
+.form input{
+    width: 350px;
+    height: 30px;
+}
+
+.form button{
+    background-color: #8257E5;
+    position: absolute;
+    border: none;
+    height: 36px;
+}
+
+.green{
+    position: absolute;
+    height: 36px;
+    width: 5px;
+    background: #04D361;
+}
+
+.input::placeholder{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    padding: 5px;
+    color: #6A6A6A;
+}
+
+a{
+    text-decoration: none;
+    color: #8257E5;
+}
+
+.link{
+    margin: 25px 45px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 19px;
+}
+
+.link img{
+    position: absolute;
+}
+
+.errorMessage{
+    margin: 20px 45px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #FF0000;
+}
