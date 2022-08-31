@@ -1,4 +1,4 @@
-# Projeto RocketNews :computer: - 
+# Projeto RocketNews :computer:  
 
 <h3>Página web utilizando HTML, CSS e JavaScript que serve para captação de leads ou inscrição em newsletter.</h3>
 
